@@ -18,3 +18,17 @@ int main()
     outfile.open(NamaFile + ".txt", ios::out);
 
     cout << ">= Menulis file, \'q\' untuk keluar " << endl;
+
+    //looping untuk menulis isi file
+    while (true) 
+    {
+   
+        cout << "- ";
+        //mendapat setiap karakter dalam satu baris
+        getline(cin, baris);
+        //kondisi jika baris hanya berisi huruf q
+        if (baris == "q") break;
+        //menulis dan memasukkan nilai dari variabel baris ke dalam file
+        outfile << baris << endl;
+
+    }
