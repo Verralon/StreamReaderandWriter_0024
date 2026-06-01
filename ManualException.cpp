@@ -15,3 +15,10 @@ int main()
     {
         cout << "Pengecualian akan dieksekusi"<< endl;
     }
+    //kondisi jika throw yang bertipe data selain integer
+    catch (...)
+    {
+        cout << "default Pengecualian dieksekusi" << endl;
+    }
+    return 0;
+}
